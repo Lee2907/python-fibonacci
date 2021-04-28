@@ -1,10 +1,10 @@
 # Python program to display the Fibonacci sequence
 
-def recur_fibo(n):
+def check_fibo(n):
    if n <= 1:
        return n
    else:
-       return(recur_fibo(n-1) + recur_fibo(n-2))
+       return(check_fibo(n-1) + check_fibo(n-2))
 
 nterms = 20
 
@@ -14,5 +14,5 @@ if nterms <= 0:
 else:
    print("Fibonacci sequence:")
    for i in range(nterms):
-       print(recur_fibo(i))
+       print(check_fibo(i))
 
